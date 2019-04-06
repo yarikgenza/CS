@@ -1,21 +1,25 @@
-var firstUniqChar = function(s) {
-  // Generate hash-table
-
+const firstUniqChar = function(s) {
   if (!s.length) return -1;
 
-  const hash = {};
+  const hash = new Map();
   const chars = s.split("");
 
   chars.forEach(char => {
-    if (hash[char] !== undefined) {
-      hash[char] = hash[char] + 1;
+    if (hash.has(char)) {
+      hash.set(char, hash.get(char) + 1);
     } else {
-      hash[char] = 1;
+      hash.set(char, 1);
     }
   });
 
-  const pairs = Object.entries(hash).find(i => i[1] === 1);
-  const targetChar = pairs ? pairs[0] : undefined;
+  let targetChar;
+
+  for ([key, value] of hash) {
+    if (value === 1) {
+      targetChar = key;
+      break;
+    }
+  }
 
   return chars.indexOf(targetChar);
 };
