@@ -17,3 +17,9 @@ String can be mutable or immutable
 - String palindromes
 - Reverse string
 - Compress string
+
+---
+
+Tips:
+
+- Use `hashtable` wherever that possible
