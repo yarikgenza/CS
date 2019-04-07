@@ -25,9 +25,9 @@ For integers: `y = num % 1000`
 
 ### Collisions
 
-When hashing functions same has for 2+ keys -> there is a collision.
+When hashing function returns same hash for 2 and more keys, there is a collision.
 
-Therefore, we place a linked-list into the bucket
+If so, we place a linked-list into the bucket
 
 ---
 
