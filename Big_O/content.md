@@ -28,7 +28,7 @@
 
 - Quasilinear time:
 
-  - **O(n * log(n))
+  - **O(n * log(n))**
   - Execution time is as linear + a bit more
   - Example: QuickSort
 
