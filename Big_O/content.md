@@ -18,7 +18,7 @@
 
   - **O(Log N)**
   - Runtime is calculated from the Log of input size. Example -> iteration with division in half (length / 2);
-  - Example: Binary search
+  - Example: Binary search, Search in a sorted array
 
 - Linear time:
 
@@ -26,10 +26,16 @@
   - Execution time is linearly proportional for the input size
   - Example: simple fn with `for (i = 0; i < array.length; i++)`;
 
+- Quasilinear time:
+
+  - **O(n * log(n))**
+  - Execution time is as linear + a bit more
+  - Example: QuickSort
+
 - Quadratic time:
 
   - **O(N^2)**
-  - Execution time increases quadratically to input size
+  - Execution time increases quadratically to the input size
   - Example: Loop + inner loop (same arr)
 
 - Cubic time:
@@ -89,5 +95,6 @@ But we do only care about valuable complexity, what `O(N^2)` here is.
 Thus, final runtime of this algo: `O(N^2)`;
 
 ---
+
 
 ### Big O of popular algorithms: [Cheat Sheet](http://bigocheatsheet.com)
