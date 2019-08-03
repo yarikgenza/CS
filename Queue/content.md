@@ -47,9 +47,12 @@ const q = new Queue();
 
 ### Common problems:
 
-- dfs??
+- Circular Queue
+- LNU Cache
+- Reverse a Queue
+- N-Queens    
 ---
 
 Tips:
 
-- add smth here
+- 
