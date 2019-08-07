@@ -1,6 +1,6 @@
 # CS
 
-Learning computes science to become an engineer, not a coder :)
+The set of basic Data Structures & Algorithms.
 
 ## Contents
 
